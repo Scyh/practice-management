@@ -1,0 +1,14 @@
+.page-view {
+  padding: 15px;
+}
+.markdown-body hr {
+  height: 1px;
+  margin: 6px 0 12px 0;
+}
+.markdown-body em,
+.markdown-body strong {
+  padding: 1px 4px;
+  border-radius: 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+}
