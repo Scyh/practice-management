@@ -12,7 +12,7 @@ var xml = new XMLHttpRequest() // 创建XMLHttpRequest对象
 xml.open(methods, url, async) // 规定请求类型、url、是否异步
 xml.setRequestHeader(header, data)  // 设置发送头部信息
 xml.send(data)  // 发送请求
-
+xml.abort() // 取消请求
 /**
  * readystate: XMLHttpRequest对象的当前状态
  * 0: unsent 创建对象，未调用open
@@ -23,7 +23,7 @@ xml.send(data)  // 发送请求
  */
 xml.onreadystatechange = function() {}  // 注册readystate改变事件
 ```
-
+ 
 ##### 常见状态码
 1. 2xx 成功
   * 200 请求成功
